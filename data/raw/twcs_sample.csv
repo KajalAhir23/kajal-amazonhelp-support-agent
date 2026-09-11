@@ -1,0 +1,441 @@
+tweet_id,author_id,inbound,created_at,text,response_tweet_id,in_response_to_tweet_id
+1,cust_380,True,Tue Jan 09 03:14:00 +0000 2018,@AmazonHelp order 126225 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,2,
+2,AmazonHelp,False,Tue Jan 09 04:21:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,1
+3,cust_378,True,Tue Nov 07 07:36:00 +0000 2017,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",4,
+4,AmazonHelp,False,Tue Nov 07 10:34:00 +0000 2017,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,3
+5,cust_303,True,Sat Mar 03 14:48:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 191161 has been delayed. Absolutely unacceptable, I want a manager to call me.",6,
+6,AmazonHelp,False,Sat Mar 03 15:01:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,5
+7,cust_112,True,Sun Dec 24 17:01:00 +0000 2017,Hi @AmazonHelp my package #198246 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,8,
+8,AmazonHelp,False,Sun Dec 24 19:15:00 +0000 2017,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,7
+9,cust_288,True,Tue Dec 12 09:28:00 +0000 2017,"Refund for order 127824 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",10,
+10,AmazonHelp,False,Tue Dec 12 12:36:00 +0000 2017,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,9
+11,cust_113,True,Tue Mar 13 13:14:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 539898 has been delayed. Absolutely unacceptable, I want a manager to call me.",12,
+12,AmazonHelp,False,Tue Mar 13 15:49:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,11
+13,cust_4,True,Wed Jul 04 06:33:00 +0000 2018,"@AmazonHelp the product I received for order 948749 is completely broken, screen is cracked out of the box.",14,
+14,AmazonHelp,False,Wed Jul 04 10:04:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,13
+15,cust_217,True,Thu Feb 01 21:09:00 +0000 2018,"@AmazonHelp I was charged twice for order 832052, can someone explain why there are two charges on my card for the same item?",16,
+16,AmazonHelp,False,Thu Feb 01 22:25:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,15
+17,cust_391,True,Wed Jan 31 13:12:00 +0000 2018,"@AmazonHelp I was charged twice for order 325772, can someone explain why there are two charges on my card for the same item?",18,
+18,AmazonHelp,False,Wed Jan 31 13:43:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,17
+19,cust_50,True,Thu Feb 08 16:48:00 +0000 2018,@AmazonHelp order 498382 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,20,
+20,AmazonHelp,False,Thu Feb 08 20:29:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,19
+21,cust_136,True,Sat Jul 21 20:47:00 +0000 2018,"I want to cancel order 733052, I placed it by mistake, how do I do this @AmazonHelp before it ships?",22,
+22,AmazonHelp,False,Sat Jul 21 21:03:00 +0000 2018,"No problem, you can cancel from Your Orders if it hasn't shipped yet. If the option isn't there, DM us the order number. ^SM",,21
+23,cust_64,True,Sat Sep 01 19:08:00 +0000 2018,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 662275,24,
+24,AmazonHelp,False,Sat Sep 01 20:49:00 +0000 2018,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,23
+25,cust_151,True,Sun Jul 29 23:26:00 +0000 2018,@AmazonHelp order 678856 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,26,
+26,AmazonHelp,False,Mon Jul 30 02:11:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,25
+27,cust_296,True,Sun Dec 10 00:14:00 +0000 2017,"Refund for order 479201 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",28,
+28,AmazonHelp,False,Sun Dec 10 03:19:00 +0000 2017,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,27
+29,cust_339,True,Fri Dec 22 23:24:00 +0000 2017,@AmazonHelp order 148050 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,30,
+30,AmazonHelp,False,Sat Dec 23 02:46:00 +0000 2017,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,29
+31,cust_120,True,Sun Aug 12 11:26:00 +0000 2018,"@AmazonHelp the product I received for order 183667 is completely broken, screen is cracked out of the box.",32,
+32,AmazonHelp,False,Sun Aug 12 11:56:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,31
+33,cust_233,True,Sun May 20 10:41:00 +0000 2018,"@AmazonHelp requesting a refund for order 391476, item doesn't match the description at all, very disappointed.",34,
+34,AmazonHelp,False,Sun May 20 14:19:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,33
+35,cust_190,True,Wed Feb 07 08:24:00 +0000 2018,"I want to cancel order 270555, I placed it by mistake, how do I do this @AmazonHelp before it ships?",36,
+36,AmazonHelp,False,Wed Feb 07 09:22:00 +0000 2018,"No problem, you can cancel from Your Orders if it hasn't shipped yet. If the option isn't there, DM us the order number. ^SM",,35
+37,cust_350,True,Thu May 24 22:37:00 +0000 2018,"@AmazonHelp the product I received for order 835911 is completely broken, screen is cracked out of the box.",38,
+38,AmazonHelp,False,Thu May 24 23:00:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,37
+39,cust_88,True,Fri Apr 13 11:23:00 +0000 2018,"Refund for order 765822 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",40,
+40,AmazonHelp,False,Fri Apr 13 14:34:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,39
+41,cust_237,True,Fri Feb 16 03:43:00 +0000 2018,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",42,
+42,AmazonHelp,False,Fri Feb 16 04:57:00 +0000 2018,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,41
+43,cust_351,True,Sat Jan 27 01:37:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 330283 has been delayed. Absolutely unacceptable, I want a manager to call me.",44,
+44,AmazonHelp,False,Sat Jan 27 05:17:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,43
+45,cust_17,True,Sat Jul 21 02:35:00 +0000 2018,Hi @AmazonHelp my package #340174 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,46,
+46,AmazonHelp,False,Sat Jul 21 04:00:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,45
+47,cust_34,True,Sat Dec 16 19:35:00 +0000 2017,"@AmazonHelp requesting a refund for order 380746, item doesn't match the description at all, very disappointed.",48,
+48,AmazonHelp,False,Sat Dec 16 23:33:00 +0000 2017,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,47
+49,cust_162,True,Sun Dec 17 09:57:00 +0000 2017,"Refund for order 852787 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",50,
+50,AmazonHelp,False,Sun Dec 17 12:49:00 +0000 2017,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,49
+51,cust_330,True,Sat Mar 17 01:30:00 +0000 2018,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 514850,52,
+52,AmazonHelp,False,Sat Mar 17 02:11:00 +0000 2018,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,51
+53,cust_127,True,Fri Jun 29 05:48:00 +0000 2018,"@AmazonHelp the product I received for order 246413 is completely broken, screen is cracked out of the box.",54,
+54,AmazonHelp,False,Fri Jun 29 08:16:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,53
+55,cust_383,True,Tue May 01 20:11:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 375504 has been delayed. Absolutely unacceptable, I want a manager to call me.",56,
+56,AmazonHelp,False,Tue May 01 22:05:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,55
+57,cust_186,True,Tue Dec 19 20:27:00 +0000 2017,"Refund for order 518801 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",58,
+58,AmazonHelp,False,Tue Dec 19 21:07:00 +0000 2017,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,57
+59,cust_47,True,Tue Jul 03 04:07:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 617488 has been delayed. Absolutely unacceptable, I want a manager to call me.",60,
+60,AmazonHelp,False,Tue Jul 03 04:24:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,59
+61,cust_322,True,Tue Nov 28 05:56:00 +0000 2017,@AmazonHelp order 260265 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,62,
+62,AmazonHelp,False,Tue Nov 28 09:23:00 +0000 2017,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,61
+63,cust_33,True,Sun Feb 18 02:08:00 +0000 2018,"@AmazonHelp requesting a refund for order 725380, item doesn't match the description at all, very disappointed.",64,
+64,AmazonHelp,False,Sun Feb 18 03:50:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,63
+65,cust_271,True,Sun Dec 31 12:53:00 +0000 2017,"Refund for order 590785 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",66,
+66,AmazonHelp,False,Sun Dec 31 15:19:00 +0000 2017,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,65
+67,cust_370,True,Sat Nov 11 16:58:00 +0000 2017,Hi @AmazonHelp my package #813328 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,68,
+68,AmazonHelp,False,Sat Nov 11 19:57:00 +0000 2017,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,67
+69,cust_137,True,Sat Jul 07 20:07:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 887352 has been delayed. Absolutely unacceptable, I want a manager to call me.",70,
+70,AmazonHelp,False,Sat Jul 07 22:56:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,69
+71,cust_151,True,Thu Mar 08 07:02:00 +0000 2018,"I want to cancel order 216970, I placed it by mistake, how do I do this @AmazonHelp before it ships?",72,
+72,AmazonHelp,False,Thu Mar 08 07:47:00 +0000 2018,"No problem, you can cancel from Your Orders if it hasn't shipped yet. If the option isn't there, DM us the order number. ^SM",,71
+73,cust_370,True,Wed Aug 15 21:19:00 +0000 2018,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 103402,74,
+74,AmazonHelp,False,Thu Aug 16 00:28:00 +0000 2018,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,73
+75,cust_391,True,Tue Dec 05 01:05:00 +0000 2017,"@AmazonHelp the product I received for order 624902 is completely broken, screen is cracked out of the box.",76,
+76,AmazonHelp,False,Tue Dec 05 03:19:00 +0000 2017,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,75
+77,cust_153,True,Fri Aug 03 10:37:00 +0000 2018,@AmazonHelp order 755674 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,78,
+78,AmazonHelp,False,Fri Aug 03 13:25:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,77
+79,cust_102,True,Sat Nov 25 15:31:00 +0000 2017,"@AmazonHelp this is the THIRD time my order 738551 has been delayed. Absolutely unacceptable, I want a manager to call me.",80,
+80,AmazonHelp,False,Sat Nov 25 17:11:00 +0000 2017,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,79
+81,cust_399,True,Sat Sep 01 20:21:00 +0000 2018,"@AmazonHelp I was charged twice for order 665579, can someone explain why there are two charges on my card for the same item?",82,
+82,AmazonHelp,False,Sat Sep 01 22:41:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,81
+83,cust_166,True,Tue Mar 27 21:30:00 +0000 2018,Hi @AmazonHelp my package #728038 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,84,
+84,AmazonHelp,False,Tue Mar 27 21:39:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,83
+85,cust_158,True,Wed Dec 27 04:21:00 +0000 2017,@AmazonHelp order 480612 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,86,
+86,AmazonHelp,False,Wed Dec 27 04:40:00 +0000 2017,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,85
+87,cust_41,True,Wed Nov 01 04:27:00 +0000 2017,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",88,
+88,AmazonHelp,False,Wed Nov 01 07:39:00 +0000 2017,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,87
+89,cust_36,True,Wed Jul 04 22:14:00 +0000 2018,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 955662,90,
+90,AmazonHelp,False,Thu Jul 05 00:35:00 +0000 2018,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,89
+91,cust_338,True,Fri Mar 23 01:04:00 +0000 2018,"@AmazonHelp I was charged twice for order 234628, can someone explain why there are two charges on my card for the same item?",92,
+92,AmazonHelp,False,Fri Mar 23 03:29:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,91
+93,cust_271,True,Tue Aug 14 15:26:00 +0000 2018,"@AmazonHelp I was charged twice for order 377932, can someone explain why there are two charges on my card for the same item?",94,
+94,AmazonHelp,False,Tue Aug 14 18:06:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,93
+95,cust_277,True,Mon Jul 02 23:36:00 +0000 2018,"@AmazonHelp requesting a refund for order 322086, item doesn't match the description at all, very disappointed.",96,
+96,AmazonHelp,False,Tue Jul 03 02:47:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,95
+97,cust_160,True,Fri Feb 23 06:26:00 +0000 2018,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",98,
+98,AmazonHelp,False,Fri Feb 23 09:22:00 +0000 2018,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,97
+99,cust_265,True,Wed Mar 14 09:08:00 +0000 2018,"I want to cancel order 559381, I placed it by mistake, how do I do this @AmazonHelp before it ships?",100,
+100,AmazonHelp,False,Wed Mar 14 09:43:00 +0000 2018,"No problem, you can cancel from Your Orders if it hasn't shipped yet. If the option isn't there, DM us the order number. ^SM",,99
+101,cust_33,True,Thu Feb 01 02:14:00 +0000 2018,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",102,
+102,AmazonHelp,False,Thu Feb 01 02:24:00 +0000 2018,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,101
+103,cust_118,True,Thu May 03 05:52:00 +0000 2018,"Refund for order 680828 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",104,
+104,AmazonHelp,False,Thu May 03 06:53:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,103
+105,cust_363,True,Fri May 18 18:39:00 +0000 2018,Hi @AmazonHelp my package #174441 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,106,
+106,AmazonHelp,False,Fri May 18 18:59:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,105
+107,cust_17,True,Thu Aug 09 23:36:00 +0000 2018,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",108,
+108,AmazonHelp,False,Fri Aug 10 01:05:00 +0000 2018,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,107
+109,cust_122,True,Wed Jan 10 09:22:00 +0000 2018,@AmazonHelp order 639131 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,110,
+110,AmazonHelp,False,Wed Jan 10 12:18:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,109
+111,cust_277,True,Sat Nov 18 04:09:00 +0000 2017,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 324643,112,
+112,AmazonHelp,False,Sat Nov 18 07:19:00 +0000 2017,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,111
+113,cust_243,True,Thu Dec 28 11:20:00 +0000 2017,"Refund for order 704201 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",114,
+114,AmazonHelp,False,Thu Dec 28 14:45:00 +0000 2017,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,113
+115,cust_209,True,Sat Dec 09 07:49:00 +0000 2017,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 946721,116,
+116,AmazonHelp,False,Sat Dec 09 08:18:00 +0000 2017,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,115
+117,cust_221,True,Tue Feb 06 23:53:00 +0000 2018,@AmazonHelp order 790993 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,118,
+118,AmazonHelp,False,Wed Feb 07 01:46:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,117
+119,cust_374,True,Fri Oct 20 17:21:00 +0000 2017,"@AmazonHelp requesting a refund for order 589710, item doesn't match the description at all, very disappointed.",120,
+120,AmazonHelp,False,Fri Oct 20 20:18:00 +0000 2017,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,119
+121,cust_207,True,Sat Jun 23 03:13:00 +0000 2018,@AmazonHelp order 163556 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,122,
+122,AmazonHelp,False,Sat Jun 23 04:44:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,121
+123,cust_99,True,Sat Dec 09 06:04:00 +0000 2017,@AmazonHelp order 360735 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,124,
+124,AmazonHelp,False,Sat Dec 09 08:26:00 +0000 2017,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,123
+125,cust_217,True,Wed Dec 06 19:20:00 +0000 2017,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 246991,126,
+126,AmazonHelp,False,Wed Dec 06 20:36:00 +0000 2017,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,125
+127,cust_39,True,Sun Mar 11 08:08:00 +0000 2018,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 361941,128,
+128,AmazonHelp,False,Sun Mar 11 11:39:00 +0000 2018,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,127
+129,cust_26,True,Sat May 26 10:31:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 202664 has been delayed. Absolutely unacceptable, I want a manager to call me.",130,
+130,AmazonHelp,False,Sat May 26 12:54:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,129
+131,cust_386,True,Mon Aug 06 00:00:00 +0000 2018,Hi @AmazonHelp my package #197793 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,132,
+132,AmazonHelp,False,Mon Aug 06 01:05:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,131
+133,cust_249,True,Sun Mar 25 06:10:00 +0000 2018,"@AmazonHelp I was charged twice for order 526156, can someone explain why there are two charges on my card for the same item?",134,
+134,AmazonHelp,False,Sun Mar 25 07:09:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,133
+135,cust_85,True,Thu Feb 15 23:31:00 +0000 2018,"@AmazonHelp requesting a refund for order 161483, item doesn't match the description at all, very disappointed.",136,
+136,AmazonHelp,False,Thu Feb 15 23:36:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,135
+137,cust_233,True,Fri Jan 12 20:32:00 +0000 2018,"@AmazonHelp requesting a refund for order 378085, item doesn't match the description at all, very disappointed.",138,
+138,AmazonHelp,False,Fri Jan 12 22:25:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,137
+139,cust_368,True,Tue Mar 27 04:35:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 794022 has been delayed. Absolutely unacceptable, I want a manager to call me.",140,
+140,AmazonHelp,False,Tue Mar 27 05:19:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,139
+141,cust_112,True,Sun Oct 22 07:02:00 +0000 2017,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",142,
+142,AmazonHelp,False,Sun Oct 22 09:35:00 +0000 2017,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,141
+143,cust_383,True,Tue Jan 23 04:19:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 163918 has been delayed. Absolutely unacceptable, I want a manager to call me.",144,
+144,AmazonHelp,False,Tue Jan 23 04:38:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,143
+145,cust_245,True,Mon Apr 02 01:58:00 +0000 2018,Hi @AmazonHelp my package #712554 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,146,
+146,AmazonHelp,False,Mon Apr 02 05:58:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,145
+147,cust_30,True,Tue Apr 03 21:28:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 265080 has been delayed. Absolutely unacceptable, I want a manager to call me.",148,
+148,AmazonHelp,False,Tue Apr 03 21:53:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,147
+149,cust_305,True,Wed Oct 25 17:51:00 +0000 2017,"@AmazonHelp I was charged twice for order 171849, can someone explain why there are two charges on my card for the same item?",150,
+150,AmazonHelp,False,Wed Oct 25 20:48:00 +0000 2017,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,149
+151,cust_62,True,Sat Sep 08 19:47:00 +0000 2018,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",152,
+152,AmazonHelp,False,Sat Sep 08 23:39:00 +0000 2018,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,151
+153,cust_297,True,Sat May 05 10:59:00 +0000 2018,"Refund for order 358175 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",154,
+154,AmazonHelp,False,Sat May 05 11:14:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,153
+155,cust_215,True,Mon May 28 08:12:00 +0000 2018,"Refund for order 185965 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",156,
+156,AmazonHelp,False,Mon May 28 10:46:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,155
+157,cust_162,True,Thu Sep 06 07:35:00 +0000 2018,"Refund for order 648177 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",158,
+158,AmazonHelp,False,Thu Sep 06 08:46:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,157
+159,cust_367,True,Tue Jan 23 09:22:00 +0000 2018,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",160,
+160,AmazonHelp,False,Tue Jan 23 10:28:00 +0000 2018,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,159
+161,cust_68,True,Sat Jun 02 13:19:00 +0000 2018,"@AmazonHelp the product I received for order 515011 is completely broken, screen is cracked out of the box.",162,
+162,AmazonHelp,False,Sat Jun 02 16:09:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,161
+163,cust_162,True,Tue Sep 04 05:53:00 +0000 2018,"@AmazonHelp the product I received for order 579434 is completely broken, screen is cracked out of the box.",164,
+164,AmazonHelp,False,Tue Sep 04 09:10:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,163
+165,cust_235,True,Tue May 15 03:46:00 +0000 2018,@AmazonHelp order 109767 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,166,
+166,AmazonHelp,False,Tue May 15 06:15:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,165
+167,cust_276,True,Sun Dec 17 14:34:00 +0000 2017,@AmazonHelp order 176819 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,168,
+168,AmazonHelp,False,Sun Dec 17 16:48:00 +0000 2017,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,167
+169,cust_179,True,Fri Aug 17 17:06:00 +0000 2018,"@AmazonHelp the product I received for order 238890 is completely broken, screen is cracked out of the box.",170,
+170,AmazonHelp,False,Fri Aug 17 17:28:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,169
+171,cust_146,True,Mon Nov 27 10:24:00 +0000 2017,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",172,
+172,AmazonHelp,False,Mon Nov 27 12:21:00 +0000 2017,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,171
+173,cust_155,True,Fri May 11 16:55:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 837715 has been delayed. Absolutely unacceptable, I want a manager to call me.",174,
+174,AmazonHelp,False,Fri May 11 20:26:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,173
+175,cust_342,True,Wed Jul 25 11:57:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 108203 has been delayed. Absolutely unacceptable, I want a manager to call me.",176,
+176,AmazonHelp,False,Wed Jul 25 14:23:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,175
+177,cust_54,True,Fri Sep 07 20:29:00 +0000 2018,"@AmazonHelp the product I received for order 795613 is completely broken, screen is cracked out of the box.",178,
+178,AmazonHelp,False,Sat Sep 08 00:18:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,177
+179,cust_60,True,Mon Aug 20 22:25:00 +0000 2018,"@AmazonHelp I was charged twice for order 377312, can someone explain why there are two charges on my card for the same item?",180,
+180,AmazonHelp,False,Mon Aug 20 22:57:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,179
+181,cust_140,True,Thu Jan 11 14:01:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 262998 has been delayed. Absolutely unacceptable, I want a manager to call me.",182,
+182,AmazonHelp,False,Thu Jan 11 16:40:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,181
+183,cust_176,True,Thu Dec 14 03:03:00 +0000 2017,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",184,
+184,AmazonHelp,False,Thu Dec 14 06:03:00 +0000 2017,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,183
+185,cust_251,True,Sun Dec 31 10:19:00 +0000 2017,"@AmazonHelp the product I received for order 629959 is completely broken, screen is cracked out of the box.",186,
+186,AmazonHelp,False,Sun Dec 31 14:15:00 +0000 2017,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,185
+187,cust_325,True,Sun Mar 04 05:15:00 +0000 2018,Hi @AmazonHelp my package #196781 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,188,
+188,AmazonHelp,False,Sun Mar 04 08:52:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,187
+189,cust_2,True,Tue Jan 30 10:39:00 +0000 2018,"@AmazonHelp the product I received for order 146228 is completely broken, screen is cracked out of the box.",190,
+190,AmazonHelp,False,Tue Jan 30 14:01:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,189
+191,cust_135,True,Tue Nov 28 19:55:00 +0000 2017,"@AmazonHelp I was charged twice for order 768061, can someone explain why there are two charges on my card for the same item?",192,
+192,AmazonHelp,False,Tue Nov 28 23:09:00 +0000 2017,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,191
+193,cust_362,True,Mon Mar 05 17:11:00 +0000 2018,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 678478,194,
+194,AmazonHelp,False,Mon Mar 05 19:39:00 +0000 2018,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,193
+195,cust_39,True,Mon Sep 10 01:58:00 +0000 2018,Hi @AmazonHelp my package #217308 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,196,
+196,AmazonHelp,False,Mon Sep 10 05:49:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,195
+197,cust_19,True,Tue Jul 31 20:48:00 +0000 2018,"@AmazonHelp I was charged twice for order 672092, can someone explain why there are two charges on my card for the same item?",198,
+198,AmazonHelp,False,Tue Jul 31 22:27:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,197
+199,cust_76,True,Tue Mar 06 11:32:00 +0000 2018,"Refund for order 679364 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",200,
+200,AmazonHelp,False,Tue Mar 06 12:09:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,199
+201,cust_187,True,Fri Aug 24 07:25:00 +0000 2018,Hi @AmazonHelp my package #423232 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,202,
+202,AmazonHelp,False,Fri Aug 24 10:53:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,201
+203,cust_108,True,Wed Jun 06 07:59:00 +0000 2018,Hi @AmazonHelp my package #475190 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,204,
+204,AmazonHelp,False,Wed Jun 06 09:07:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,203
+205,cust_400,True,Sun Apr 22 20:20:00 +0000 2018,@AmazonHelp order 470858 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,206,
+206,AmazonHelp,False,Mon Apr 23 00:11:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,205
+207,cust_384,True,Sun Nov 26 06:30:00 +0000 2017,"@AmazonHelp requesting a refund for order 750810, item doesn't match the description at all, very disappointed.",208,
+208,AmazonHelp,False,Sun Nov 26 07:35:00 +0000 2017,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,207
+209,cust_91,True,Fri Aug 17 21:55:00 +0000 2018,"@AmazonHelp I was charged twice for order 938742, can someone explain why there are two charges on my card for the same item?",210,
+210,AmazonHelp,False,Fri Aug 17 23:45:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,209
+211,cust_378,True,Sun Sep 02 14:17:00 +0000 2018,Hi @AmazonHelp my package #288073 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,212,
+212,AmazonHelp,False,Sun Sep 02 15:47:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,211
+213,cust_343,True,Sat Aug 11 14:18:00 +0000 2018,"@AmazonHelp requesting a refund for order 941204, item doesn't match the description at all, very disappointed.",214,
+214,AmazonHelp,False,Sat Aug 11 17:31:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,213
+215,cust_82,True,Sat Jul 14 16:11:00 +0000 2018,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",216,
+216,AmazonHelp,False,Sat Jul 14 19:15:00 +0000 2018,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,215
+217,cust_20,True,Thu Aug 09 14:30:00 +0000 2018,@AmazonHelp order 501124 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,218,
+218,AmazonHelp,False,Thu Aug 09 16:35:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,217
+219,cust_236,True,Mon Feb 05 07:21:00 +0000 2018,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",220,
+220,AmazonHelp,False,Mon Feb 05 08:44:00 +0000 2018,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,219
+221,cust_13,True,Tue May 29 07:27:00 +0000 2018,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",222,
+222,AmazonHelp,False,Tue May 29 08:21:00 +0000 2018,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,221
+223,cust_143,True,Sat Aug 11 16:49:00 +0000 2018,"@AmazonHelp requesting a refund for order 444207, item doesn't match the description at all, very disappointed.",224,
+224,AmazonHelp,False,Sat Aug 11 17:11:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,223
+225,cust_329,True,Wed Apr 04 11:15:00 +0000 2018,"@AmazonHelp the product I received for order 468203 is completely broken, screen is cracked out of the box.",226,
+226,AmazonHelp,False,Wed Apr 04 13:02:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,225
+227,cust_15,True,Sat Nov 11 23:52:00 +0000 2017,"@AmazonHelp this is the THIRD time my order 447235 has been delayed. Absolutely unacceptable, I want a manager to call me.",228,
+228,AmazonHelp,False,Sun Nov 12 03:41:00 +0000 2017,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,227
+229,cust_298,True,Fri Jan 05 15:40:00 +0000 2018,"@AmazonHelp the product I received for order 287241 is completely broken, screen is cracked out of the box.",230,
+230,AmazonHelp,False,Fri Jan 05 15:54:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,229
+231,cust_223,True,Sat Feb 03 20:39:00 +0000 2018,@AmazonHelp order 725550 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,232,
+232,AmazonHelp,False,Sat Feb 03 23:50:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,231
+233,cust_311,True,Thu Apr 05 04:52:00 +0000 2018,"I want to cancel order 557592, I placed it by mistake, how do I do this @AmazonHelp before it ships?",234,
+234,AmazonHelp,False,Thu Apr 05 05:26:00 +0000 2018,"No problem, you can cancel from Your Orders if it hasn't shipped yet. If the option isn't there, DM us the order number. ^SM",,233
+235,cust_98,True,Mon Jan 01 17:47:00 +0000 2018,"@AmazonHelp requesting a refund for order 704596, item doesn't match the description at all, very disappointed.",236,
+236,AmazonHelp,False,Mon Jan 01 18:03:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,235
+237,cust_267,True,Sun Sep 02 23:47:00 +0000 2018,"@AmazonHelp requesting a refund for order 101773, item doesn't match the description at all, very disappointed.",238,
+238,AmazonHelp,False,Mon Sep 03 03:18:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,237
+239,cust_369,True,Sat Sep 08 08:08:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 820221 has been delayed. Absolutely unacceptable, I want a manager to call me.",240,
+240,AmazonHelp,False,Sat Sep 08 11:22:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,239
+241,cust_221,True,Thu Oct 26 11:26:00 +0000 2017,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",242,
+242,AmazonHelp,False,Thu Oct 26 14:21:00 +0000 2017,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,241
+243,cust_161,True,Wed May 30 12:46:00 +0000 2018,"I want to cancel order 753425, I placed it by mistake, how do I do this @AmazonHelp before it ships?",244,
+244,AmazonHelp,False,Wed May 30 16:28:00 +0000 2018,"No problem, you can cancel from Your Orders if it hasn't shipped yet. If the option isn't there, DM us the order number. ^SM",,243
+245,cust_154,True,Tue Apr 03 15:18:00 +0000 2018,@AmazonHelp order 854717 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,246,
+246,AmazonHelp,False,Tue Apr 03 16:42:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,245
+247,cust_207,True,Mon Jun 11 20:18:00 +0000 2018,"@AmazonHelp requesting a refund for order 442027, item doesn't match the description at all, very disappointed.",248,
+248,AmazonHelp,False,Mon Jun 11 21:38:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,247
+249,cust_99,True,Sat Mar 03 01:54:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 233470 has been delayed. Absolutely unacceptable, I want a manager to call me.",250,
+250,AmazonHelp,False,Sat Mar 03 04:49:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,249
+251,cust_384,True,Sat Aug 25 16:50:00 +0000 2018,"@AmazonHelp requesting a refund for order 810219, item doesn't match the description at all, very disappointed.",252,
+252,AmazonHelp,False,Sat Aug 25 17:39:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,251
+253,cust_155,True,Sun Feb 25 20:20:00 +0000 2018,"Refund for order 696750 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",254,
+254,AmazonHelp,False,Sun Feb 25 22:45:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,253
+255,cust_147,True,Sat Dec 16 12:36:00 +0000 2017,Hi @AmazonHelp my package #418635 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,256,
+256,AmazonHelp,False,Sat Dec 16 14:31:00 +0000 2017,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,255
+257,cust_336,True,Fri Jan 26 07:51:00 +0000 2018,"Refund for order 736130 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",258,
+258,AmazonHelp,False,Fri Jan 26 09:55:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,257
+259,cust_346,True,Sun Dec 17 19:21:00 +0000 2017,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 563638,260,
+260,AmazonHelp,False,Sun Dec 17 21:36:00 +0000 2017,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,259
+261,cust_377,True,Fri Dec 01 18:47:00 +0000 2017,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 932291,262,
+262,AmazonHelp,False,Fri Dec 01 21:40:00 +0000 2017,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,261
+263,cust_264,True,Wed May 30 16:50:00 +0000 2018,@AmazonHelp order 397571 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,264,
+264,AmazonHelp,False,Wed May 30 19:37:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,263
+265,cust_48,True,Wed Jul 25 23:29:00 +0000 2018,"Refund for order 451470 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",266,
+266,AmazonHelp,False,Thu Jul 26 02:46:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,265
+267,cust_159,True,Thu Dec 21 18:56:00 +0000 2017,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",268,
+268,AmazonHelp,False,Thu Dec 21 22:27:00 +0000 2017,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,267
+269,cust_13,True,Tue Oct 17 19:49:00 +0000 2017,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",270,
+270,AmazonHelp,False,Tue Oct 17 20:56:00 +0000 2017,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,269
+271,cust_394,True,Fri Oct 27 12:22:00 +0000 2017,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 740967,272,
+272,AmazonHelp,False,Fri Oct 27 14:23:00 +0000 2017,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,271
+273,cust_295,True,Sun Dec 10 19:00:00 +0000 2017,"@AmazonHelp requesting a refund for order 760356, item doesn't match the description at all, very disappointed.",274,
+274,AmazonHelp,False,Sun Dec 10 22:08:00 +0000 2017,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,273
+275,cust_205,True,Thu Dec 28 19:58:00 +0000 2017,"@AmazonHelp requesting a refund for order 618392, item doesn't match the description at all, very disappointed.",276,
+276,AmazonHelp,False,Thu Dec 28 20:40:00 +0000 2017,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,275
+277,cust_395,True,Sun Aug 19 09:18:00 +0000 2018,Hi @AmazonHelp my package #887443 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,278,
+278,AmazonHelp,False,Sun Aug 19 09:50:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,277
+279,cust_91,True,Fri Jul 20 18:25:00 +0000 2018,"@AmazonHelp requesting a refund for order 329471, item doesn't match the description at all, very disappointed.",280,
+280,AmazonHelp,False,Fri Jul 20 21:28:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,279
+281,cust_26,True,Sat Apr 21 22:41:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 587115 has been delayed. Absolutely unacceptable, I want a manager to call me.",282,
+282,AmazonHelp,False,Sat Apr 21 23:49:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,281
+283,cust_69,True,Thu Jul 19 18:53:00 +0000 2018,@AmazonHelp order 578634 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,284,
+284,AmazonHelp,False,Thu Jul 19 20:56:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,283
+285,cust_305,True,Wed Jan 24 12:35:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 686075 has been delayed. Absolutely unacceptable, I want a manager to call me.",286,
+286,AmazonHelp,False,Wed Jan 24 15:53:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,285
+287,cust_369,True,Tue Aug 21 18:35:00 +0000 2018,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 742412,288,
+288,AmazonHelp,False,Tue Aug 21 20:49:00 +0000 2018,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,287
+289,cust_281,True,Mon Mar 12 08:27:00 +0000 2018,"@AmazonHelp requesting a refund for order 970914, item doesn't match the description at all, very disappointed.",290,
+290,AmazonHelp,False,Mon Mar 12 12:21:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,289
+291,cust_244,True,Tue Mar 13 20:46:00 +0000 2018,"@AmazonHelp I was charged twice for order 879779, can someone explain why there are two charges on my card for the same item?",292,
+292,AmazonHelp,False,Tue Mar 13 21:57:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,291
+293,cust_327,True,Tue Jan 09 23:11:00 +0000 2018,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",294,
+294,AmazonHelp,False,Wed Jan 10 02:32:00 +0000 2018,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,293
+295,cust_321,True,Wed Dec 27 02:33:00 +0000 2017,"@AmazonHelp this is the THIRD time my order 608136 has been delayed. Absolutely unacceptable, I want a manager to call me.",296,
+296,AmazonHelp,False,Wed Dec 27 03:48:00 +0000 2017,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,295
+297,cust_366,True,Sat Jan 13 00:43:00 +0000 2018,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 181247,298,
+298,AmazonHelp,False,Sat Jan 13 01:48:00 +0000 2018,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,297
+299,cust_164,True,Wed Aug 22 03:23:00 +0000 2018,"@AmazonHelp the product I received for order 452161 is completely broken, screen is cracked out of the box.",300,
+300,AmazonHelp,False,Wed Aug 22 05:46:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,299
+301,cust_78,True,Sun Dec 24 04:47:00 +0000 2017,@AmazonHelp order 245095 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,302,
+302,AmazonHelp,False,Sun Dec 24 06:30:00 +0000 2017,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,301
+303,cust_110,True,Tue Oct 24 09:14:00 +0000 2017,"@AmazonHelp I was charged twice for order 840734, can someone explain why there are two charges on my card for the same item?",304,
+304,AmazonHelp,False,Tue Oct 24 11:05:00 +0000 2017,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,303
+305,cust_278,True,Mon Mar 19 15:18:00 +0000 2018,"@AmazonHelp requesting a refund for order 446954, item doesn't match the description at all, very disappointed.",306,
+306,AmazonHelp,False,Mon Mar 19 17:09:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,305
+307,cust_216,True,Mon Feb 19 19:18:00 +0000 2018,Hi @AmazonHelp my package #316881 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,308,
+308,AmazonHelp,False,Mon Feb 19 23:14:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,307
+309,cust_11,True,Wed Aug 08 22:14:00 +0000 2018,"Refund for order 829308 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",310,
+310,AmazonHelp,False,Thu Aug 09 02:04:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,309
+311,cust_245,True,Tue Oct 03 03:31:00 +0000 2017,"Refund for order 498858 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",312,
+312,AmazonHelp,False,Tue Oct 03 05:06:00 +0000 2017,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,311
+313,cust_200,True,Tue Aug 07 17:32:00 +0000 2018,"@AmazonHelp the product I received for order 890075 is completely broken, screen is cracked out of the box.",314,
+314,AmazonHelp,False,Tue Aug 07 21:25:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,313
+315,cust_383,True,Mon Jun 25 11:19:00 +0000 2018,"@AmazonHelp requesting a refund for order 664365, item doesn't match the description at all, very disappointed.",316,
+316,AmazonHelp,False,Mon Jun 25 13:43:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,315
+317,cust_250,True,Tue Dec 19 21:20:00 +0000 2017,"Refund for order 331251 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",318,
+318,AmazonHelp,False,Tue Dec 19 22:34:00 +0000 2017,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,317
+319,cust_15,True,Mon Feb 19 13:53:00 +0000 2018,"@AmazonHelp requesting a refund for order 609232, item doesn't match the description at all, very disappointed.",320,
+320,AmazonHelp,False,Mon Feb 19 15:24:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,319
+321,cust_85,True,Fri Aug 03 00:27:00 +0000 2018,"@AmazonHelp requesting a refund for order 859359, item doesn't match the description at all, very disappointed.",322,
+322,AmazonHelp,False,Fri Aug 03 02:31:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,321
+323,cust_274,True,Tue Oct 10 19:38:00 +0000 2017,"@AmazonHelp I was charged twice for order 752483, can someone explain why there are two charges on my card for the same item?",324,
+324,AmazonHelp,False,Tue Oct 10 23:35:00 +0000 2017,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,323
+325,cust_289,True,Wed May 30 09:22:00 +0000 2018,"@AmazonHelp requesting a refund for order 720644, item doesn't match the description at all, very disappointed.",326,
+326,AmazonHelp,False,Wed May 30 09:33:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,325
+327,cust_220,True,Sun Nov 19 09:45:00 +0000 2017,@AmazonHelp order 773971 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,328,
+328,AmazonHelp,False,Sun Nov 19 13:31:00 +0000 2017,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,327
+329,cust_26,True,Wed Jan 03 17:16:00 +0000 2018,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 290556,330,
+330,AmazonHelp,False,Wed Jan 03 18:58:00 +0000 2018,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,329
+331,cust_233,True,Sun Jan 28 00:01:00 +0000 2018,"I want to cancel order 321941, I placed it by mistake, how do I do this @AmazonHelp before it ships?",332,
+332,AmazonHelp,False,Sun Jan 28 01:32:00 +0000 2018,"No problem, you can cancel from Your Orders if it hasn't shipped yet. If the option isn't there, DM us the order number. ^SM",,331
+333,cust_386,True,Wed Sep 12 07:44:00 +0000 2018,"@AmazonHelp requesting a refund for order 391773, item doesn't match the description at all, very disappointed.",334,
+334,AmazonHelp,False,Wed Sep 12 11:21:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,333
+335,cust_42,True,Wed Mar 21 05:36:00 +0000 2018,"@AmazonHelp requesting a refund for order 364525, item doesn't match the description at all, very disappointed.",336,
+336,AmazonHelp,False,Wed Mar 21 05:45:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,335
+337,cust_180,True,Thu Dec 21 15:16:00 +0000 2017,"@AmazonHelp this is the THIRD time my order 154615 has been delayed. Absolutely unacceptable, I want a manager to call me.",338,
+338,AmazonHelp,False,Thu Dec 21 18:07:00 +0000 2017,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,337
+339,cust_334,True,Sun Oct 15 15:46:00 +0000 2017,@AmazonHelp order 919182 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,340,
+340,AmazonHelp,False,Sun Oct 15 19:04:00 +0000 2017,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,339
+341,cust_103,True,Thu Aug 02 13:17:00 +0000 2018,Hi @AmazonHelp my package #359295 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,342,
+342,AmazonHelp,False,Thu Aug 02 13:27:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,341
+343,cust_123,True,Wed Nov 15 22:56:00 +0000 2017,"Refund for order 259784 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",344,
+344,AmazonHelp,False,Thu Nov 16 01:02:00 +0000 2017,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,343
+345,cust_112,True,Mon Mar 19 07:31:00 +0000 2018,@AmazonHelp order 691364 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,346,
+346,AmazonHelp,False,Mon Mar 19 10:35:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,345
+347,cust_189,True,Fri Dec 01 02:09:00 +0000 2017,"@AmazonHelp the product I received for order 904150 is completely broken, screen is cracked out of the box.",348,
+348,AmazonHelp,False,Fri Dec 01 04:49:00 +0000 2017,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,347
+349,cust_368,True,Sat Nov 11 16:48:00 +0000 2017,"Refund for order 884256 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",350,
+350,AmazonHelp,False,Sat Nov 11 20:12:00 +0000 2017,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,349
+351,cust_56,True,Sun Apr 29 16:37:00 +0000 2018,"@AmazonHelp I was charged twice for order 426147, can someone explain why there are two charges on my card for the same item?",352,
+352,AmazonHelp,False,Sun Apr 29 16:48:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,351
+353,cust_347,True,Mon Aug 27 14:27:00 +0000 2018,"@AmazonHelp the product I received for order 703766 is completely broken, screen is cracked out of the box.",354,
+354,AmazonHelp,False,Mon Aug 27 16:08:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,353
+355,cust_102,True,Sat Oct 28 16:04:00 +0000 2017,"@AmazonHelp requesting a refund for order 849747, item doesn't match the description at all, very disappointed.",356,
+356,AmazonHelp,False,Sat Oct 28 18:40:00 +0000 2017,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,355
+357,cust_357,True,Mon Jul 09 06:02:00 +0000 2018,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",358,
+358,AmazonHelp,False,Mon Jul 09 07:24:00 +0000 2018,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,357
+359,cust_62,True,Tue Jul 17 21:32:00 +0000 2018,"Refund for order 944657 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",360,
+360,AmazonHelp,False,Wed Jul 18 00:01:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,359
+361,cust_273,True,Mon Mar 05 23:13:00 +0000 2018,Hi @AmazonHelp my package #464069 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,362,
+362,AmazonHelp,False,Tue Mar 06 02:07:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,361
+363,cust_260,True,Thu May 24 18:19:00 +0000 2018,"I want to cancel order 172306, I placed it by mistake, how do I do this @AmazonHelp before it ships?",364,
+364,AmazonHelp,False,Thu May 24 19:51:00 +0000 2018,"No problem, you can cancel from Your Orders if it hasn't shipped yet. If the option isn't there, DM us the order number. ^SM",,363
+365,cust_216,True,Fri Jul 27 09:38:00 +0000 2018,Hi @AmazonHelp my package #990844 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,366,
+366,AmazonHelp,False,Fri Jul 27 11:48:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,365
+367,cust_186,True,Sun May 20 09:49:00 +0000 2018,@AmazonHelp order 554582 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,368,
+368,AmazonHelp,False,Sun May 20 13:42:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,367
+369,cust_79,True,Thu Mar 08 13:20:00 +0000 2018,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 841666,370,
+370,AmazonHelp,False,Thu Mar 08 14:10:00 +0000 2018,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,369
+371,cust_139,True,Sun May 13 05:55:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 782054 has been delayed. Absolutely unacceptable, I want a manager to call me.",372,
+372,AmazonHelp,False,Sun May 13 09:26:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,371
+373,cust_248,True,Mon Mar 19 06:07:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 912270 has been delayed. Absolutely unacceptable, I want a manager to call me.",374,
+374,AmazonHelp,False,Mon Mar 19 08:03:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,373
+375,cust_166,True,Tue Aug 07 02:22:00 +0000 2018,"Refund for order 381433 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",376,
+376,AmazonHelp,False,Tue Aug 07 03:29:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,375
+377,cust_231,True,Thu Dec 28 18:54:00 +0000 2017,@AmazonHelp order 392477 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,378,
+378,AmazonHelp,False,Thu Dec 28 22:11:00 +0000 2017,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,377
+379,cust_313,True,Fri Jun 01 06:43:00 +0000 2018,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 697530,380,
+380,AmazonHelp,False,Fri Jun 01 08:25:00 +0000 2018,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,379
+381,cust_254,True,Mon Aug 06 19:44:00 +0000 2018,"I want to cancel order 130094, I placed it by mistake, how do I do this @AmazonHelp before it ships?",382,
+382,AmazonHelp,False,Mon Aug 06 21:12:00 +0000 2018,"No problem, you can cancel from Your Orders if it hasn't shipped yet. If the option isn't there, DM us the order number. ^SM",,381
+383,cust_109,True,Wed Feb 07 04:30:00 +0000 2018,"@AmazonHelp I was charged twice for order 611233, can someone explain why there are two charges on my card for the same item?",384,
+384,AmazonHelp,False,Wed Feb 07 07:59:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,383
+385,cust_144,True,Fri Aug 17 12:21:00 +0000 2018,"@AmazonHelp the product I received for order 456871 is completely broken, screen is cracked out of the box.",386,
+386,AmazonHelp,False,Fri Aug 17 14:58:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,385
+387,cust_6,True,Sat Apr 07 02:21:00 +0000 2018,"@AmazonHelp the product I received for order 682789 is completely broken, screen is cracked out of the box.",388,
+388,AmazonHelp,False,Sat Apr 07 03:14:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,387
+389,cust_369,True,Sun Feb 25 23:25:00 +0000 2018,@AmazonHelp order 353080 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,390,
+390,AmazonHelp,False,Mon Feb 26 01:35:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,389
+391,cust_124,True,Sat Jun 09 10:38:00 +0000 2018,"@AmazonHelp this is the THIRD time my order 894993 has been delayed. Absolutely unacceptable, I want a manager to call me.",392,
+392,AmazonHelp,False,Sat Jun 09 12:44:00 +0000 2018,We completely understand your frustration and apologize for the repeated delays. Please DM your order number so we can escalate this internally. ^KL,,391
+393,cust_9,True,Fri Nov 03 21:06:00 +0000 2017,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 569945,394,
+394,AmazonHelp,False,Fri Nov 03 22:26:00 +0000 2017,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,393
+395,cust_355,True,Thu Dec 28 14:01:00 +0000 2017,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",396,
+396,AmazonHelp,False,Thu Dec 28 15:24:00 +0000 2017,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,395
+397,cust_243,True,Fri Apr 20 12:19:00 +0000 2018,"Refund for order 486945 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",398,
+398,AmazonHelp,False,Fri Apr 20 14:39:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,397
+399,cust_382,True,Thu Apr 19 09:22:00 +0000 2018,"I want to cancel order 546173, I placed it by mistake, how do I do this @AmazonHelp before it ships?",400,
+400,AmazonHelp,False,Thu Apr 19 10:51:00 +0000 2018,"No problem, you can cancel from Your Orders if it hasn't shipped yet. If the option isn't there, DM us the order number. ^SM",,399
+401,cust_233,True,Sun Jan 07 15:18:00 +0000 2018,"I want to cancel order 836996, I placed it by mistake, how do I do this @AmazonHelp before it ships?",402,
+402,AmazonHelp,False,Sun Jan 07 16:41:00 +0000 2018,"No problem, you can cancel from Your Orders if it hasn't shipped yet. If the option isn't there, DM us the order number. ^SM",,401
+403,cust_62,True,Wed Jun 20 14:40:00 +0000 2018,"@AmazonHelp the product I received for order 341736 is completely broken, screen is cracked out of the box.",404,
+404,AmazonHelp,False,Wed Jun 20 15:34:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,403
+405,cust_381,True,Sat Apr 14 02:27:00 +0000 2018,"I want to cancel order 225362, I placed it by mistake, how do I do this @AmazonHelp before it ships?",406,
+406,AmazonHelp,False,Sat Apr 14 05:47:00 +0000 2018,"No problem, you can cancel from Your Orders if it hasn't shipped yet. If the option isn't there, DM us the order number. ^SM",,405
+407,cust_111,True,Tue Jun 26 22:01:00 +0000 2018,"@AmazonHelp I was charged twice for order 300845, can someone explain why there are two charges on my card for the same item?",408,
+408,AmazonHelp,False,Wed Jun 27 00:09:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,407
+409,cust_302,True,Wed Jul 04 18:47:00 +0000 2018,"@AmazonHelp the product I received for order 859782 is completely broken, screen is cracked out of the box.",410,
+410,AmazonHelp,False,Wed Jul 04 21:06:00 +0000 2018,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,409
+411,cust_52,True,Tue Jul 31 03:37:00 +0000 2018,"Refund for order 396745 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",412,
+412,AmazonHelp,False,Tue Jul 31 04:31:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,411
+413,cust_185,True,Tue Dec 05 07:59:00 +0000 2017,"@AmazonHelp the product I received for order 338533 is completely broken, screen is cracked out of the box.",414,
+414,AmazonHelp,False,Tue Dec 05 09:21:00 +0000 2017,That's not the experience we want for you — please DM your order number and a photo of the damage so we can send a replacement. ^KL,,413
+415,cust_274,True,Thu Nov 16 02:05:00 +0000 2017,Hi @AmazonHelp my package #842411 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,416,
+416,AmazonHelp,False,Thu Nov 16 03:20:00 +0000 2017,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,415
+417,cust_284,True,Mon Jan 15 08:43:00 +0000 2018,Hi @AmazonHelp my package #157174 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,418,
+418,AmazonHelp,False,Mon Jan 15 11:46:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,417
+419,cust_386,True,Wed Mar 28 17:21:00 +0000 2018,"@AmazonHelp I was charged twice for order 768854, can someone explain why there are two charges on my card for the same item?",420,
+420,AmazonHelp,False,Wed Mar 28 17:52:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,419
+421,cust_146,True,Tue Mar 20 21:39:00 +0000 2018,Hi @AmazonHelp my package #701949 was supposed to arrive 3 days ago and tracking hasn't updated at all. Where is it??,422,
+422,AmazonHelp,False,Tue Mar 20 23:46:00 +0000 2018,"Hi there, we're sorry for the delay! Please DM us your order number and zip code so we can look into the tracking for you. ^KL",,421
+423,cust_95,True,Thu Oct 19 16:56:00 +0000 2017,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 457256,424,
+424,AmazonHelp,False,Thu Oct 19 18:05:00 +0000 2017,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,423
+425,cust_34,True,Fri Feb 23 21:26:00 +0000 2018,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 219629,426,
+426,AmazonHelp,False,Fri Feb 23 23:36:00 +0000 2018,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,425
+427,cust_323,True,Thu Jun 07 22:18:00 +0000 2018,@AmazonHelp order 705050 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,428,
+428,AmazonHelp,False,Thu Jun 07 22:36:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,427
+429,cust_289,True,Tue Sep 11 13:35:00 +0000 2018,"@AmazonHelp I was charged twice for order 256445, can someone explain why there are two charges on my card for the same item?",430,
+430,AmazonHelp,False,Tue Sep 11 14:57:00 +0000 2018,We apologize for the confusion — please DM your order ID and the last 4 digits of the card used so we can review the charges. ^RT,,429
+431,cust_61,True,Sun Apr 22 04:30:00 +0000 2018,@AmazonHelp order 360247 arrived but it's the wrong item entirely. I ordered a blender and got headphones. Need this fixed asap,432,
+432,AmazonHelp,False,Sun Apr 22 07:50:00 +0000 2018,So sorry about that mix-up! Please DM your order number and we'll arrange a free return and get the correct item shipped out. ^SM,,431
+433,cust_306,True,Sun Jul 15 21:35:00 +0000 2018,"@AmazonHelp requesting a refund for order 735770, item doesn't match the description at all, very disappointed.",434,
+434,AmazonHelp,False,Mon Jul 16 00:18:00 +0000 2018,We're sorry to hear that! Please DM your order number and we'll start a refund review right away. ^RT,,433
+435,cust_268,True,Fri Feb 16 11:47:00 +0000 2018,"Can't log into my account, it keeps saying my password is wrong even after I reset it 3 times @AmazonHelp this is so frustrating",436,
+436,AmazonHelp,False,Fri Feb 16 13:47:00 +0000 2018,"Sorry for the trouble logging in! Please try resetting from a private/incognito window, and DM us if it still doesn't work. ^JD",,435
+437,cust_302,True,Tue Mar 06 03:10:00 +0000 2018,Does @AmazonHelp support gift wrapping for electronics orders? Just curious before I place order 411797,438,
+438,AmazonHelp,False,Tue Mar 06 04:33:00 +0000 2018,Great question! Gift wrap availability shows on the product page at checkout for eligible items. Let us know if you need more help! ^JD,,437
+439,cust_31,True,Thu May 10 23:02:00 +0000 2018,"Refund for order 751194 still hasn't shown up after 2 weeks @AmazonHelp, this feels like a scam at this point.",440,
+440,AmazonHelp,False,Fri May 11 02:16:00 +0000 2018,We're sorry for the wait — refunds can take 3-5 business days once processed. Please DM your order number so we can check the status. ^SM,,439
