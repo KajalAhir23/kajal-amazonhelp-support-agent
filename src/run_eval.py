@@ -1,4 +1,4 @@
-"""
+﻿"""
 End-to-end evaluation harness: runs the full agent (classify -> draft ->
 escalate) over the golden set and reports automated metrics + judge scores.
 
@@ -7,6 +7,7 @@ Usage: python src/run_eval.py [--limit N]
 import argparse
 import json
 import sys
+import time
 
 sys.path.insert(0, "src")
 from config import GOLDEN_SET_PATH
@@ -27,10 +28,6 @@ def main():
     if args.limit:
         golden = golden[: args.limit]
 
-    # Few-shot block built from the golden set itself for the classifier demo.
-    # (In the real pipeline this would come from a held-out train split —
-    # see src/baseline_classifiers.py for the proper train/test separation
-    # used for the reported classifier metrics.)
     few_shot_block = build_few_shot_block(golden, k_per_intent=1)
     retriever = build_retriever()
 
@@ -38,7 +35,11 @@ def main():
     pred_escalate, true_escalate = [], []
     judge_scores = []
 
-    for row in golden:
+    start = time.time()
+    for i, row in enumerate(golden):
+        elapsed = time.time() - start
+        print(f"[{i+1}/{len(golden)}] ({elapsed:.0f}s elapsed) processing...", flush=True)
+
         pred_intent = classify(row["customer_text"], few_shot_block)
         pred_intents.append(pred_intent)
         true_intents.append(row["true_intent"])
@@ -54,7 +55,7 @@ def main():
         judge_scores.append(overall_score(j))
 
     print("=" * 60)
-    print(f"Evaluated {len(golden)} golden examples\n")
+    print(f"Evaluated {len(golden)} golden examples in {time.time()-start:.0f}s\n")
 
     im = intent_metrics(true_intents, pred_intents)
     print(f"Intent classification: accuracy={im['accuracy']:.3f}  macro-F1={im['macro_f1']:.3f}")

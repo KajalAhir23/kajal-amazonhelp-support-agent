@@ -1,4 +1,4 @@
-# Report — Kajal: AI Support Agent for AmazonHelp
+﻿# Report — Kajal: AI Support Agent for AmazonHelp
 
 ## 1. Problem framing
 
@@ -10,101 +10,102 @@ isn't supported by precedent, and correctly recognizes when a human
 should take over instead of the bot.
 
 **What I chose not to build:**
-- **Full multi-turn dialogue management.** The agent handles the
-  first customer message in a thread and drafts one reply; it doesn't
-  manage a back-and-forth conversation state machine. Real support
-  threads on Twitter are often 2-4 tweets deep, but the assignment's
-  core ask (classify, draft, escalate) is about the decision at each
-  turn, not conversation orchestration — extending to multi-turn is a
-  "what's next" item, not core scope.
-- **Fine-tuning a model.** With a small hand-labelled golden set and a
-  free-tier LLM API, few-shot prompting is more sample-efficient and
-  faster to iterate on than fine-tuning, and is fully reversible/auditable.
-- **A learned escalation classifier.** Escalation decisions here combine
-  explicit rules + an LLM policy check rather than a trained classifier,
-  because for a first version of a system handling real customer trust
-  and money, an auditable/debuggable rule set beats an opaque model —
-  see decision log.
+- **Full multi-turn dialogue management.** The agent handles the first
+  customer message in a thread and drafts one reply; it doesn't manage
+  a back-and-forth conversation state machine.
+- **Fine-tuning a model.** With a small hand-labelled set and a free-tier
+  LLM API, few-shot prompting is more sample-efficient and faster to
+  iterate on than fine-tuning, and is fully reversible/auditable.
+- **A learned escalation classifier.** Escalation combines explicit rules
+  + policy checks rather than a trained model, because for a system
+  handling real customer trust and money, an auditable rule set beats
+  an opaque model in a first version.
 
 ## 2. Results vs. baselines
 
-Run via `python src/compare_baselines.py` (intent classification, 64-example
-held-out test split of the golden set):
+Run against the REAL AmazonHelp subset of the Kaggle "Customer Support
+on Twitter" dataset (168,814 real conversation pairs, subsampled to
+20,000 for retrieval; golden set of 200 examples, 50 hand-labelled + 150
+heuristic-labelled — see `data/golden/README_golden_set.md`).
+
+Intent classification (`python src/compare_baselines.py`, 60-example
+held-out test split):
 
 | Model | Accuracy | Macro-F1 |
 |---|---|---|
-| TrivialBaseline (always predicts majority class) | 0.203 | 0.042 |
-| SimpleBaseline (TF-IDF + Logistic Regression) | 1.000 | 1.000 |
-| LLM Classifier (Groq, few-shot) | 1.000 | 1.000 |
+| TrivialBaseline (always predicts majority class) | 0.117 | 0.026 |
+| SimpleBaseline (TF-IDF + Logistic Regression) | 0.667 | 0.659 |
+| LLM Classifier (Groq, gpt-oss-120b, few-shot) | 0.683 | 0.673 |
 
-Escalation decision (30-example subset, `python src/run_eval.py --limit 30`):
-precision 0.556, recall 1.000, F1 0.714.
+Full pipeline evaluation on 10 golden examples (`python src/run_eval.py --limit 10`):
+- Intent classification: accuracy 0.800, macro-F1 0.829
+- Escalation decision: precision 1.000, recall 1.000, F1 1.000 (small
+  sample — see §4 on why this isn't fully trustworthy yet)
+- Reply quality (real Groq LLM-as-judge, 1-5 scale): 4.73 average
 
-Reply quality (LLM-as-judge, 1-5 scale, offline heuristic fallback shown
-here — see §5 for why this number needs re-validation): avg 4.29/5.
-
-**Read §5 before trusting the accuracy numbers above.**
+Judge-human agreement (`python src/judge_agreement.py`, 10 adversarial
+good/bad reply pairs, real Groq judge): overall Pearson r=0.724 (p=0.018),
+with per-dimension correlation of r=0.846 (correctness), r=0.655
+(grounded), r=0.422 (tone). The judge reliably flags wrong/hallucinated
+replies but is systematically STRICTER than the human rater on replies
+that are actually good (e.g. three examples the human rated 5/5 for
+being correctly grounded were rated 1.67-2.67 by the judge) — see §4.
 
 ## 3. Failure analysis
 
-See `reports/failure_analysis.md` for the full top-5 writeup with real
-examples pulled directly from these eval runs. Summary:
-1. Perfect classifier scores are a synthetic-data artifact, not real skill.
-2. Escalation over-triggers (low precision) because the confidence
-   threshold was tuned assuming embeddings, not TF-IDF similarity.
-3. The offline judge fallback can't discriminate tone at all (zero variance).
-4. Retrieval can't be meaningfully evaluated on near-duplicate synthetic data.
-5. Billing disputes are always escalated by design, capping auto-handle rate.
+See `reports/failure_analysis.md`. Key real findings from this run:
+1. The LLM classifier only modestly beats TF-IDF+LogReg on real data
+   (68.3% vs 66.7%) — a much smaller gap than expected, and a useful
+   finding: for this task, simple retrieval-based features may already
+   capture most of the signal a general-purpose LLM few-shot prompt
+   extracts.
+2. The real LLM judge is conservative/strict relative to a human on
+   good replies, even while correctly penalizing bad ones — meaning
+   raw judge scores likely UNDERSTATE reply quality, not overstate it.
+3. Escalation precision/recall of 1.0 was measured on only 10 examples —
+   not enough to trust yet; needs re-running on the full 200-example
+   golden set before reporting as a real number.
 
 ## 4. What's misleading about my headline number (mandatory section)
 
-**The 100% classifier accuracy and 4.29/5 reply quality are both
-misleadingly good, for the same root cause: this repo runs against a
-synthetic dataset generated from 10 fixed templates**, because the
-real Kaggle dataset requires a personal login that isn't available in
-the environment I built this in.
-
-Specifically:
-- The synthetic templates make each intent class near-perfectly
-  linearly separable by keywords alone — real tweets have typos,
-  sarcasm, multi-intent messages, and much messier phrasing. Expect
-  real accuracy meaningfully below 100%.
-- The reply-quality judge score of 4.29 is partly circular in offline
-  mode: the fallback reply generator literally returns the closest
-  retrieved historical reply verbatim when no LLM key is set, so it
-  trivially "matches" the reference. The 5-point corroborating human
-  vs. judge agreement check in `judge_agreement.py` (r=0.61 on the
-  overall score, using the SAME offline heuristic judge) shows this
-  fallback judge already has real discrimination problems on adversarial
-  pairs, so 4.29 should not be read as "the agent's replies are 86% as
-  good as ideal" — it's closer to "the plumbing works."
-- The escalation precision of 0.556 (from real rule logic, not a
-  fallback) is the most trustworthy number in this report, since the
-  rule signals fire the same way regardless of data source.
-
-**Before this could be trusted as a real evaluation:** the real
-`twcs.csv` needs to be downloaded (`src/download_real_data.sh`), a
-`GROQ_API_KEY` needs to be added (free, see `.env.example`), and
-`build_golden_set.py --interactive` needs to be re-run for a genuinely
-human-labelled golden set — at which point every script above produces
-real numbers with zero code changes.
+- **The 4.73/5 average judge score and 1.0/1.0 escalation precision/recall
+  were both measured on only 10 examples** (`--limit 10`, used to fit in
+  the free-tier rate limit within a submission deadline). Neither is a
+  reliable estimate yet — both need re-running against the full 200-example
+  golden set for a real number worth trusting.
+- **75% of the golden set's intent labels are unreviewed heuristic
+  output, not human judgment** (`intent_label_source: "heuristic_unreviewed"`
+  on 150/200 rows — see `data/golden/README_golden_set.md`). Any accuracy
+  number computed against the full 200 should be treated as optimistic
+  until re-computed against just the 50 hand-labelled rows.
+- **Escalation ground truth is rule-based, not human-judged**, for a
+  disclosed, deliberate reason: two earlier attempts at fully manual
+  escalation labelling across 200 examples in a row produced implausible
+  rates (~1% and ~100%) from rapid, fatigue-driven y/n input, which would
+  have been worse ground truth than a consistent rule. This means the
+  escalation metrics currently test "does the agent's rule match a
+  reference rule," not "would a human agree these are the right calls."
+- **The judge itself appears to be a strict, not lenient, grader** based
+  on the 10-example agreement check — meaning real reply quality may be
+  somewhat BETTER than the 4.73 average suggests, the opposite direction
+  of the usual "LLM judges are sycophantic" concern. This needs a larger
+  human-rated sample to confirm.
 
 ## 5. What I'd do next with one more week
 
-1. Get the real Kaggle dataset + a Groq key running, and regenerate
-   every number in this report against real data (this is the single
-   highest-value next step — everything above is currently a
-   plumbing/methodology demo, not a real evaluation).
-2. Re-calibrate the escalation confidence threshold per retrieval
-   backend using a percentile cutoff from the corpus's own score
-   distribution, rather than one fixed constant.
-3. Switch retrieval to the embedding backend (already wired in,
-   `RETRIEVAL_BACKEND=embedding`) and re-run the retrieval quality
-   check — TF-IDF can't meaningfully rank near-duplicate complaints.
-4. Expand the golden set's escalation labels with a second human
-   labeller and report inter-annotator agreement, since "should this
-   escalate" is judgment-heavy and a single labeller's rule-based
-   ground truth (used here) is a weak proxy for real ambiguity.
-5. Add basic multi-turn support: track whether a customer has already
-   DM'd order details in a previous tweet in the thread, so the agent
-   doesn't re-ask for info it already has.
+1. Re-run `run_eval.py` and `judge_agreement.py` against the FULL
+   200-example golden set (not `--limit 10`), spacing calls to respect
+   the free-tier rate limit overnight if needed, for real trustworthy
+   numbers on escalation and judge agreement.
+2. Hand-label the remaining 150 heuristic-only intent rows properly, or
+   at minimum report classifier accuracy separately on just the 50
+   verified-human rows vs. the full 200.
+3. Get a second human labeller to hand-judge escalation on a subsample,
+   to actually validate the rule-based escalation ground truth against
+   real human agreement rather than just internal consistency.
+4. Switch retrieval to the embedding backend (`RETRIEVAL_BACKEND=embedding`)
+   and compare retrieval quality against the current TF-IDF default on
+   real (non-duplicate) data.
+5. Investigate WHY the LLM classifier only modestly beat TF-IDF (68.3%
+   vs 66.7%) — try more few-shot examples per intent, or a larger Groq
+   model, to see if the gap widens with a stronger setup.

@@ -1,26 +1,26 @@
-﻿"""
-Builds the golden evaluation set (150-250 examples).
+"""
+Builds the golden evaluation set (150-250 hand-labelled examples).
 
 Sampling method (documented for the report):
   1. Stratify conversation pairs by a cheap keyword-heuristic intent bucket
      (notebooks/01_eda.py) so rare intents (e.g. cancellation) aren't
      drowned out by common ones (refund/delivery).
   2. Sample proportionally within a floor/ceiling per bucket (min 15,
-     max 25) so no single intent dominates the golden set.
+     max 25) so no single intent dominates the golden set and no intent
+     is left with too few examples to evaluate against.
+  3. Each sampled example is hand-labelled with:
+       - true_intent (one of INTENT_LABELS)
+       - should_escalate (bool)
+       - escalation_reason (free text, only if true)
+       - notes (free text, optional edge-case flag)
 
-Labelling approach (hybrid, documented honestly - see
-data/golden/README_golden_set.md):
-  - The first --hand-label-n examples (default 50) have their true_intent
-    HAND-LABELLED by a human via --interactive.
-  - The remaining examples use the keyword-heuristic bucket as true_intent
-    (unreviewed) - a disclosed limitation, not presented as human ground
-    truth.
-  - should_escalate is deterministic rule-based ground truth for ALL
-    examples (same rule as src/escalate.py), not hand-judged per example.
-    This was a deliberate choice after two earlier fully-manual passes
-    produced implausible escalation rates (~1% and ~100%) from rapid
-    fatigue-driven y/n input - an objective rule is more trustworthy
-    ground truth here than a tired human clicking the same key 200 times.
+Labelling process on the SYNTHETIC sample used here: because this sample
+was generated from known templates (src/make_synthetic_sample.py), the
+template's intent is used as ground truth and escalation is derived from
+an explicit rule (angry/legal/repeated-failure language -> escalate),
+then spot-checked by eyeballing every 5th row. On the REAL Kaggle data,
+run this script with --interactive to hand-label each sampled example
+yourself via the CLI instead — the sampling logic is identical either way.
 """
 import argparse
 import json
@@ -57,15 +57,13 @@ def rule_based_escalation(customer_text: str, intent: str) -> tuple[bool, str]:
     hits = [kw for kw in ESCALATION_KEYWORDS if kw in text_l]
     if hits:
         return True, f"Customer used escalation-signal language: {hits}"
-    if "third time" in text_l or "3rd time" in text_l or "twice" in text_l:
-        return True, "Repeated failure mentioned by customer"
-    if intent == "billing_or_charge_dispute":
-        return True, "Billing/money-risk intent - policy-flagged as always-human-reviewed"
-    return False, "Routine issue, no escalation signals detected"
+    if intent == "delivery_delay_or_lost" and "third time" in text_l:
+        return True, "Repeated failure mentioned by customer (3rd occurrence)"
+    return False, ""
 
 
-def label_example(intent_bucket: str, conv: dict, hand_label: bool) -> dict:
-    if hand_label:
+def label_example(intent_bucket: str, conv: dict, interactive: bool) -> dict:
+    if interactive:
         print("\n" + "=" * 60)
         print(f"Customer: {conv['customer_text']}")
         print(f"Brand reply (historical): {conv['brand_reply']}")
@@ -74,22 +72,27 @@ def label_example(intent_bucket: str, conv: dict, hand_label: bool) -> dict:
         raw_intent = input("True intent [enter to accept suggestion]: ").strip()
         true_intent = raw_intent if raw_intent in INTENT_LABELS else intent_bucket
         if raw_intent and raw_intent not in INTENT_LABELS:
-            print(f"  (! '{raw_intent}' isn't a valid intent label - kept the suggestion '{intent_bucket}' instead)")
+            print(f"  (! '{raw_intent}' isn't a valid intent label — kept the suggestion '{intent_bucket}' instead)")
+
+        esc_raw = ""
+        while esc_raw not in ("y", "n"):
+            esc_raw = input("Should escalate? (y/n, required): ").strip().lower()
+            if esc_raw not in ("y", "n"):
+                print("  Please type y or n.")
+        esc = esc_raw == "y"
+
+        reason = input("Escalation reason (blank if not escalating): ").strip()
         notes = input("Notes (optional): ").strip()
-        label_source = "human"
     else:
         true_intent = intent_bucket
+        esc, reason = rule_based_escalation(conv["customer_text"], intent_bucket)
         notes = ""
-        label_source = "heuristic_unreviewed"
-
-    esc, reason = rule_based_escalation(conv["customer_text"], true_intent)
 
     return {
         "conv_id": conv["conv_id"],
         "customer_text": conv["customer_text"],
         "historical_brand_reply": conv["brand_reply"],
         "true_intent": true_intent,
-        "intent_label_source": label_source,
         "should_escalate": esc,
         "escalation_reason": reason,
         "notes": notes,
@@ -99,26 +102,19 @@ def label_example(intent_bucket: str, conv: dict, hand_label: bool) -> dict:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--interactive", action="store_true",
-                         help="Hand-label the first N examples' intent via CLI")
-    parser.add_argument("--hand-label-n", type=int, default=50,
-                         help="How many examples to hand-label when --interactive is set")
+                         help="Hand-label via CLI instead of using template/rule ground truth")
     args = parser.parse_args()
 
     convs = [json.loads(l) for l in open(CONVERSATIONS_PATH, encoding="utf-8")]
     sampled = stratified_sample(convs)
 
-    golden = []
-    for i, (intent, conv) in enumerate(sampled):
-        hand_label = args.interactive and i < args.hand_label_n
-        golden.append(label_example(intent, conv, hand_label))
+    golden = [label_example(intent, conv, args.interactive) for intent, conv in sampled]
 
     with open(GOLDEN_SET_PATH, "w", encoding="utf-8") as f:
         for row in golden:
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
 
     print(f"\nWrote {len(golden)} golden examples -> {GOLDEN_SET_PATH}")
-    n_hand = sum(1 for g in golden if g["intent_label_source"] == "human")
-    print(f"Hand-labelled: {n_hand} | Heuristic-only: {len(golden) - n_hand}")
     from collections import Counter
     dist = Counter(g["true_intent"] for g in golden)
     print("Intent distribution in golden set:", dict(dist))

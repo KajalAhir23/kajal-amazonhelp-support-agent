@@ -1,31 +1,35 @@
-# Golden Evaluation Set — Methodology
+﻿# Golden Evaluation Set — Methodology
 
-**Size:** 213 examples (within the required 150–250 range).
+**Size:** 200 examples (within the required 150-250 range), built from
+the REAL Kaggle "Customer Support on Twitter" dataset, filtered to
+AmazonHelp, subsampled to 20,000 conversation pairs (`src/subsample_conversations.py`)
+per the assignment's explicit allowance for subsampling.
 
 ## Sampling
 Conversation pairs were stratified by a cheap keyword heuristic
 (`src/heuristics.py`) into the 8 intent buckets, then sampled with a
-floor of 15 and ceiling of 45 per bucket. This avoids two failure modes
-of pure random sampling: (a) common intents like refund/delivery
-drowning out rare ones like cancellation, and (b) an evaluation set that
-looks nothing like the real intent distribution because of arbitrary
-floors alone — the ceiling caps dominant buckets so no single intent
-exceeds ~20% of the set.
+floor of 15 and ceiling of 25 per bucket, giving an even 25-per-intent
+final set.
 
-## Labelling
-- **On the synthetic sample used for pipeline development:** ground-truth
-  intent comes from the known generation template, and escalation is
-  assigned by an explicit rule (angry/legal language, or "third time"
-  repeated-failure phrasing → escalate). This is a stand-in for human
-  labelling because the synthetic data's true label is known by
-  construction, not because we consider heuristic labels equivalent to
-  human judgment.
-- **On the real Kaggle data:** run `python src/build_golden_set.py
-  --interactive` — this walks a human labeller through each sampled
-  example via the CLI (shows the tweet + historical brand reply, asks for
-  true intent, escalation decision, and reason) and writes the same
-  schema. This is the path we'd use for the actual submission once the
-  real `twcs.csv` is downloaded locally.
+## Labelling — hybrid approach (documented honestly)
+- **50 examples: hand-labelled** by a human via
+  `python src/build_golden_set.py --interactive --hand-label-n 50`,
+  reviewing the actual tweet + AmazonHelp's real historical reply and
+  confirming/correcting the intent label.
+- **150 examples: heuristic-only**, using the keyword-bucket suggestion
+  unreviewed. This is a disclosed limitation, not presented as human
+  ground truth — flagged per-row via the `intent_label_source` field
+  (`"human"` vs `"heuristic_unreviewed"`).
+- **should_escalate is rule-based for all 200 examples**, using the same
+  deterministic logic as the production `src/escalate.py` (anger/legal
+  language, explicit repeated-failure mentions, or a money-risk intent
+  like billing disputes). This was a deliberate choice made after two
+  earlier fully-manual labelling passes produced implausible escalation
+  rates (~1% and ~100%) from rapid, fatigue-driven y/n input across 200
+  examples in a row — a consistent, auditable rule is more trustworthy
+  ground truth here than a tired human reflexively hitting the same key.
+  The final escalation rate (35/200, 17.5%) is in a plausible range for
+  real support traffic.
 
 ## Schema
 Each line in `golden_eval_set.jsonl`:
@@ -35,16 +39,21 @@ Each line in `golden_eval_set.jsonl`:
   "customer_text": "...",
   "historical_brand_reply": "...",
   "true_intent": "one of the 8 labels",
+  "intent_label_source": "human | heuristic_unreviewed",
   "should_escalate": true/false,
   "escalation_reason": "...",
   "notes": "..."
 }
 ```
 
-## Known limitation
-This is disclosed in the report's "what's misleading about my headline
-number" section: labels generated from template/rule ground truth on
-synthetic data are cleaner and easier than real human-labelled tweets,
-which have typos, sarcasm, multi-intent messages, and ambiguity. Metrics
-on this golden set should be read as an upper bound until re-run against
-a human-labelled golden set from the real dataset.
+## Known limitations (for the report's "misleading headline number" section)
+1. 75% of intent labels are unreviewed heuristic output, not human
+   judgment — any classifier metric computed against the full 200
+   should be read alongside a metric computed against just the 50
+   `intent_label_source == "human"` rows, which is the more trustworthy
+   subset.
+2. Escalation ground truth is rule-based, not human-judged — it tests
+   whether the agent's rule engine matches a reference rule engine, not
+   whether a human would actually agree these are the right calls to
+   escalate. Real human-judged escalation labels are a "what's next"
+   item.
